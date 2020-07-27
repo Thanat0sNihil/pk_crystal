@@ -123,6 +123,10 @@ PARTY_LENGTH EQU 6
 MONS_PER_BOX EQU 20
 NUM_BOXES    EQU 14
 
+; dv constants
+ATKDEFDV_BASE EQU $CC
+SPDSPCDV_BASE EQU $FF
+
 ; hall of fame
 HOF_MON_LENGTH EQU 1 + 2 + 2 + 1 + (MON_NAME_LENGTH - 1) ; species, id, dvs, level, nick
 HOF_LENGTH EQU 1 + HOF_MON_LENGTH * PARTY_LENGTH + 1 ; win count, party, terminator

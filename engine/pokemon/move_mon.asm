@@ -203,9 +203,9 @@ endr
 	jr nz, .copywildmonDVs
 
 	call Random
+	or ATKDEFDV_BASE ; $CC
 	ld b, a
-	call Random
-	ld c, a
+	ld c, SPDSPCDV_BASE ; $FF
 .initializeDVs
 	ld a, b
 	ld [de], a

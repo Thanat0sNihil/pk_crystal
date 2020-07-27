@@ -6083,11 +6083,11 @@ LoadEnemyMon:
 	call GetRoamMonDVs
 	inc hl
 	call BattleRandom
+	or ATKDEFDV_BASE ; $CC
 	ld [hld], a
 	ld c, a
-	call BattleRandom
-	ld [hl], a
-	ld b, a
+	ld [hl], SPDSPCDV_BASE ; $FF
+	ld b, SPDSPCDV_BASE
 ; We're done with DVs
 	jr .UpdateDVs
 
@@ -6099,17 +6099,26 @@ LoadEnemyMon:
 	cp BATTLETYPE_SHINY
 	jr nz, .GenerateDVs
 
-	ld b, ATKDEFDV_SHINY ; $ea
+	ld b, ATKDEFDV_SHINY ; $fa
 	ld c, SPDSPCDV_SHINY ; $aa
 	jr .UpdateDVs
 
+	
 .GenerateDVs:
-; Generate new random DVs
+; Generate new DVs
+	call BattleRandom
+	or ATKDEFDV_BASE ; $cc
+	ld b, a
+	ld c, SPDSPCDV_BASE ; $ff
+	jr .UpdateDVs
+	
+.GenerateUNDVs
+; generate random DVs for unown
 	call BattleRandom
 	ld b, a
 	call BattleRandom
 	ld c, a
-
+	
 .UpdateDVs:
 ; Input DVs in register bc
 	ld hl, wEnemyMonDVs
@@ -6135,7 +6144,8 @@ LoadEnemyMon:
 ; Can't use any letters that haven't been unlocked
 ; If combined with forced shiny battletype, causes an infinite loop
 	call CheckUnownLetter
-	jr c, .GenerateDVs ; try again
+	jr c, .GenerateUNDVs ; try again
+
 
 .Magikarp:
 ; These filters are untranslated.
@@ -6205,7 +6215,7 @@ LoadEnemyMon:
 ; Try again if length < 1024 mm (i.e. if HIGH(length) < 3 feet)
 	ld a, [wMagikarpLength]
 	cp HIGH(1024) ; should be "cp 3", since 1024 mm = 3'4", but HIGH(1024) = 4
-	jr c, .GenerateDVs ; try again
+	jp c, .GenerateDVs ; try again
 
 ; Finally done with DVs
 
