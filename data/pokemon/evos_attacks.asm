@@ -1804,6 +1804,7 @@ EeveeEvosAttacks:
 	db 1, TACKLE
 	db 1, TAIL_WHIP
 	db 8, SAND_ATTACK
+	db 12, GROWTH
 	db 16, GROWL
 	db 23, QUICK_ATTACK
 	db 30, BITE
