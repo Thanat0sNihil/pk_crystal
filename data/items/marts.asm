@@ -337,14 +337,13 @@ MartCeladon5F1:
 	db -1 ; end
 
 MartCeladon5F2:
-	db 7 ; # items
-	db X_ACCURACY
-	db GUARD_SPEC
-	db DIRE_HIT
-	db X_ATTACK
-	db X_DEFEND
-	db X_SPEED
-	db X_SPECIAL
+	db 6 ; # items
+	db THUNDERSTONE
+	db WATER_STONE
+	db FIRE_STONE
+	db LEAF_STONE
+	db MOON_STONE
+	db SUN_STONE
 	db -1 ; end
 
 MartFuchsia:
@@ -392,11 +391,12 @@ MartIndigoPlateau:
 	db -1 ; end
 
 MartUnderground:
-	db 4 ; # items
+	db 5 ; # items
 	db ENERGYPOWDER
 	db ENERGY_ROOT
 	db HEAL_POWDER
 	db REVIVAL_HERB
+	db LEFTOVERS
 	db -1 ; end
 
 DefaultMart:
