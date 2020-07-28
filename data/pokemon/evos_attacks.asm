@@ -2168,7 +2168,7 @@ TyphlosionEvosAttacks:
 	db 21, QUICK_ATTACK
 	db 31, FLAME_WHEEL
 	db 45, SWIFT
-	db 50 DOUBLE_EDGE,
+	db 50, DOUBLE_EDGE
 	db 60, FLAMETHROWER
 	db 0 ; no more level-up moves
 

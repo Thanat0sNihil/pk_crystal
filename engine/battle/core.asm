@@ -7350,7 +7350,8 @@ GiveExperiencePoints:
 	ld b, a
 	ld c, PARTY_LENGTH
 	ld d, 0
-.count_loop+	push bc
+.count_loop
+	push bc
 	push de
 	ld a, [wPartyCount]
 	cp c
