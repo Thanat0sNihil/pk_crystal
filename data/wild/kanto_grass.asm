@@ -38,7 +38,7 @@ KantoGrassWildMons:
 	db 12, PARAS
 	db 10, GEODUDE
 	db 8, CLEFAIRY
-	db 8, CLEFAIRY
+	db 8, CHARMANDER
 	; day
 	db 6, ZUBAT
 	db 8, GEODUDE
@@ -46,7 +46,7 @@ KantoGrassWildMons:
 	db 12, PARAS
 	db 10, GEODUDE
 	db 8, CLEFAIRY
-	db 8, CLEFAIRY
+	db 8, CHARMANDER
 	; nite
 	db 6, ZUBAT
 	db 8, GEODUDE
@@ -146,7 +146,7 @@ KantoGrassWildMons:
 	db 21, SLOWPOKE
 	db 20, RATTATA
 	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 23, SQUIRTLE
 	; day
 	db 22, ZUBAT
 	db 22, RATICATE
@@ -154,7 +154,7 @@ KantoGrassWildMons:
 	db 21, SLOWPOKE
 	db 20, RATTATA
 	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 23, SQUIRTLE
 	; nite
 	db 22, ZUBAT
 	db 22, RATICATE
@@ -173,7 +173,7 @@ KantoGrassWildMons:
 	db 3, PIDGEY
 	db 6, FURRET
 	db 4, PIDGEY
-	db 4, PIDGEY
+	db 4, BULBASAUR
 	; day
 	db 2, PIDGEY
 	db 2, RATTATA
@@ -181,7 +181,7 @@ KantoGrassWildMons:
 	db 3, PIDGEY
 	db 6, FURRET
 	db 4, PIDGEY
-	db 4, PIDGEY
+	db 4, BULBASAUR
 	; nite
 	db 2, HOOTHOOT
 	db 2, RATTATA
@@ -359,7 +359,7 @@ KantoGrassWildMons:
 	db 17, SNUBBULL
 	db 19, PIDGEOTTO
 	db 16, ABRA
-	db 17, GROWLITHE
+	db 17, VULPIX
 	db 16, JIGGLYPUFF
 	db 18, KADABRA
 	db 18, KADABRA
