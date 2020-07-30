@@ -35,10 +35,24 @@ Lugia:
 	startbattle
 	disappear WHIRLISLANDLUGIACHAMBER_LUGIA
 	reloadmapafterbattle
+	opentext
+	writetext AfterText
+	cry MOLTRES
+	pause 6
+	cry ARTICUNO
+	pause 6
+	cry ZAPDOS
+	pause 6
+	closetext
 	end
 
 LugiaText:
 	text "Gyaaas!"
+	done
+
+AfterText:
+	text "You hear strange"
+	line "distant cries..."
 	done
 
 WhirlIslandLugiaChamber_MapEvents:
