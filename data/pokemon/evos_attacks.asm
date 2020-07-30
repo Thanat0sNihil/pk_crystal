@@ -127,7 +127,6 @@ SquirtleEvosAttacks:
 	db 7, BUBBLE
 	db 10, WITHDRAW
 	db 13, WATER_GUN
-	db 15, ZAP_CANNON
 	db 18, BITE
 	db 23, RAPID_SPIN
 	db 28, PROTECT
