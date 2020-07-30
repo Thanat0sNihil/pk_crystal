@@ -35,7 +35,7 @@ Zapdos:
 	closetext
 	setevent EVENT_FOUGHT_ZAPDOS
 	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
-	loadwildmon ZAPDOS, 35
+	loadwildmon ZAPDOS, 40
 	startbattle
 	disappear RT10ZAPDOS
 	reloadmapafterbattle

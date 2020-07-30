@@ -1974,37 +1974,43 @@ SnorlaxEvosAttacks:
 ArticunoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, GUST
-	db 1, POWDER_SNOW
+	db 1, ICY_WIND
 	db 13, MIST
 	db 25, AGILITY
-	db 37, MIND_READER
+	db 41, MIND_READER
 	db 49, ICE_BEAM
+	db 54, BUBBLEBEAM
 	db 61, REFLECT
 	db 73, BLIZZARD
+	db 78, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 ZapdosEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
-	db 1, THUNDERSHOCK
+	db 1, THUNDERBOLT
 	db 13, THUNDER_WAVE
 	db 25, AGILITY
-	db 37, DETECT
+	db 41, DETECT
 	db 49, DRILL_PECK
+	db 54, REFLECT
 	db 61, LIGHT_SCREEN
 	db 73, THUNDER
+	db 78, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 MoltresEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WING_ATTACK
-	db 1, EMBER
+	db 1, FLAMETHROWER
 	db 13, FIRE_SPIN
 	db 25, AGILITY
-	db 37, ENDURE
-	db 49, FLAMETHROWER
+	db 41, ENDURE
+	db 49, DOUBLE_EDGE
+	db 54, REFLECT
 	db 61, SAFEGUARD
-	db 73, SKY_ATTACK
+	db 73, FIRE_BLAST
+	db 78, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 DratiniEvosAttacks:

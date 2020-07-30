@@ -44,7 +44,7 @@ Moltres:
 	closetext
 	setevent EVENT_FOUGHT_MOLTRES
 	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
-	loadwildmon MOLTRES, 35
+	loadwildmon MOLTRES, 40
 	startbattle
 	disappear VRMOLTRES
 	reloadmapafterbattle
