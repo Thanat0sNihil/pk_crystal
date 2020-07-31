@@ -46,6 +46,7 @@ IvysaurEvosAttacks:
 	db 15, SLEEP_POWDER
 	db 22, RAZOR_LEAF
 	db 29, SWEET_SCENT
+	db 31, SWORDS_DANCE
 	db 38, GROWTH
 	db 47, SYNTHESIS
 	db 56, SOLARBEAM
@@ -169,6 +170,7 @@ BlastoiseEvosAttacks:
 	db 42, RAIN_DANCE
 	db 55, SKULL_BASH
 	db 68, HYDRO_PUMP
+	db 72, REFLECT
 	db 0 ; no more level-up moves
 
 CaterpieEvosAttacks:
@@ -361,6 +363,7 @@ PikachuEvosAttacks:
 	db 33, AGILITY
 	db 41, THUNDER
 	db 50, LIGHT_SCREEN
+	db 55, REFLECT
 	db 0 ; no more level-up moves
 
 RaichuEvosAttacks:
@@ -393,6 +396,7 @@ SandslashEvosAttacks:
 	db 11, SAND_ATTACK
 	db 17, POISON_STING
 	db 24, SLASH
+	db 30, SWORDS_DANCE
 	db 33, SWIFT
 	db 42, FURY_SWIPES
 	db 52, SANDSTORM
@@ -481,6 +485,7 @@ ClefairyEvosAttacks:
 	db 8, SING
 	db 13, DOUBLESLAP
 	db 19, MINIMIZE
+	db 23, THUNDER_WAVE
 	db 26, DEFENSE_CURL
 	db 34, METRONOME
 	db 43, MOONLIGHT
@@ -515,6 +520,7 @@ NinetalesEvosAttacks:
 	db 1, CONFUSE_RAY
 	db 1, SAFEGUARD
 	db 43, FIRE_SPIN
+	db 50, REFLECT
 	db 0 ; no more level-up moves
 
 JigglypuffEvosAttacks:
@@ -992,6 +998,7 @@ TentacruelEvosAttacks:
 	db 30, WRAP
 	db 38, BARRIER
 	db 47, SCREECH
+	db 50, SWORDS_DANCE
 	db 55, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -1350,6 +1357,7 @@ KrabbyEvosAttacks:
 	db 27, GUILLOTINE
 	db 34, PROTECT
 	db 41, CRABHAMMER
+	db 50, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 KinglerEvosAttacks:
@@ -1364,6 +1372,7 @@ KinglerEvosAttacks:
 	db 27, GUILLOTINE
 	db 38, PROTECT
 	db 49, CRABHAMMER
+	db 54, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 VoltorbEvosAttacks:
@@ -1926,6 +1935,7 @@ KabutoEvosAttacks:
 	db 28, SAND_ATTACK
 	db 37, ENDURE
 	db 46, MEGA_DRAIN
+	db 50, SWORDS_DANCE
 	db 55, ANCIENTPOWER
 	db 0 ; no more level-up moves
 
@@ -1940,6 +1950,7 @@ KabutopsEvosAttacks:
 	db 37, ENDURE
 	db 40, SLASH
 	db 51, MEGA_DRAIN
+	db 55, SWORDS_DANCE
 	db 65, ANCIENTPOWER
 	db 0 ; no more level-up moves
 
@@ -1950,6 +1961,7 @@ AerodactylEvosAttacks:
 	db 15, BITE
 	db 22, SUPERSONIC
 	db 29, ANCIENTPOWER
+	db 31, REFLECT
 	db 36, SCARY_FACE
 	db 43, TAKE_DOWN
 	db 50, HYPER_BEAM
@@ -1957,17 +1969,18 @@ AerodactylEvosAttacks:
 
 SnorlaxEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
+	db 1, HEADBUTT
 	db 8, AMNESIA
 	db 15, DEFENSE_CURL
 	db 22, BELLY_DRUM
-	db 29, HEADBUTT
+	db 29, BODY_SLAM
 	db 36, SNORE
 	db 36, REST
-	db 43, BODY_SLAM
+	db 43, DOUBLE_EDGE
 	db 45, LOVELY_KISS
-	db 50, ROLLOUT
+	db 50, ROCK_SLIDE
 	db 57, HYPER_BEAM
+	db 63, SELFDESTRUCT
 	db 0 ; no more level-up moves
 
 ArticunoEvosAttacks:
@@ -2084,6 +2097,7 @@ MewEvosAttacks:
 	db 30, METRONOME
 	db 40, PSYCHIC_M
 	db 50, ANCIENTPOWER
+	db 60, SWORDS_DANCE
 	db 0 ; no more level-up moves
 
 ChikoritaEvosAttacks:
