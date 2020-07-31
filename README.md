@@ -1,3 +1,21 @@
+#pk_crystal
+This is a modified version of Pokemon Crystal, forked off the incredible work of the pokecrystal dissambly, whose readme is below.
+this version incorporates a large number of bugfixes, largely those documented in the pokecrystal project and also incorporates a number of gameplay changes:
+
+ - All Pokemon except Mew and Mewtwo catchable in wild or event encounters
+ - Improved DV RNG, such that pokemon will have near perfect DVs while still allowing all possible Hidden Powers
+    - Note that this means Odd Eggs and Red Gyarados are the only possible shinies and many species will only ever be male in the wild
+ - EXP gain on catching pokemon
+ - Most (basically all strong/interesting) NYPC event moves added to their respective pokemon's learnsets. 
+ - Small improvements to npc trainer pokemon quality and movesets
+ - Removal of stat boosts from gym badges and NPC 25% fail rate for status moves
+ - Substitute returns as TM51 learnable for almost all Gen1 pokemon
+ - Replaced X-item shop in Celadon with an Evo Stone shop
+ - All trade Evolutions are now Stone Evolutions
+ - Various changes to pokemon's learnsets to preserve competitive-relevant moves from Gen 1
+
+
+
 # Pokémon Crystal [![Build Status][travis-badge]][travis]
 
 This is a disassembly of Pokémon Crystal.
