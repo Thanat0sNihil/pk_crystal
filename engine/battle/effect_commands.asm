@@ -4798,7 +4798,6 @@ CalcPlayerStats:
 	ld a, 5
 	call CalcBattleStats
 
-	call CallBattleCore
 
 	call BattleCommand_SwitchTurn
 
